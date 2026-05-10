@@ -1,6 +1,6 @@
-#  Mental Health Status Classification from Social Media Text
+# 🧠 Mental Health Status Classification from Social Media Text
 
-##  Team Members
+## 👥 Team Members
 
 - Abhi P Vijay
 - Nakshathra V
@@ -8,52 +8,55 @@
 ---
 
 # 🎓 Course Details
-Predictive Analytics
+
+- Course: Predictive Analytics
+
 
 ---
 
 # 📌 Project Overview
 
-This project focuses on detecting and classifying mental health status from social media text using Natural Language Processing (NLP) and Machine Learning techniques.
+This project focuses on detecting and classifying mental health status from textual social media/movie review data using Natural Language Processing (NLP) and Machine Learning techniques.
 
-The system analyzes textual data and predicts whether the mental health condition reflected in the text belongs to:
+The system analyzes textual input and predicts whether the mental health condition reflected in the text belongs to:
 
 - Normal
 - Depression
 
-The project demonstrates the complete machine learning workflow including:
+The project demonstrates the complete machine learning pipeline including:
 - Data preprocessing
 - Exploratory Data Analysis (EDA)
-- Feature extraction
-- Model training
+- Feature extraction using TF-IDF
+- Machine learning model training
 - Model evaluation
-- Deployment preparation
+- Model saving and deployment preparation
 
 ---
 
 # 🎯 Objectives
 
-- To preprocess and clean textual social media data
+- To preprocess and clean textual data
 - To perform exploratory data analysis on text data
 - To extract meaningful numerical features using TF-IDF
-- To train machine learning models for classification
+- To train machine learning classification models
 - To compare model performance using evaluation metrics
-- To prepare the project for deployment using Streamlit
+- To save trained models for deployment
 
 ---
 
 # 💡 Problem Statement
 
-Mental health issues are increasingly reflected in online social media conversations. Identifying depressive patterns manually from large amounts of text data is difficult and time-consuming.
+Mental health-related emotions and sentiments are increasingly reflected in online text data. Manual analysis of such large-scale textual content is difficult and time-consuming.
 
-This project aims to build an NLP-based machine learning system capable of automatically classifying mental health status from textual data.
+This project aims to develop an NLP-based machine learning system capable of automatically classifying mental health-related sentiment from text.
 
 ---
 
 # 📂 Dataset Description
 
 ## Dataset Used
-- IMDB Dataset
+
+- IMDB Movie Review Dataset
 
 ## Dataset Features
 
@@ -62,28 +65,34 @@ This project aims to build an NLP-based machine learning system capable of autom
 | review | User review text |
 | sentiment | Positive / Negative sentiment |
 
+---
+
+## Dataset Size
+
+| Category | Count |
+|---|---|
+| Positive Reviews | 25,000 |
+| Negative Reviews | 25,000 |
+| Total Records | 50,000 |
+
+---
+
 ## Data Processing
 
-The original sentiment labels were converted into mental health categories:
+The original sentiment labels were mapped into mental health categories:
 
 | Original Label | Converted Label |
 |---|---|
 | positive | normal |
 | negative | depression |
 
-## Dataset Size
-
-- Total records: 50,000
-- Positive reviews: 25,000
-- Negative reviews: 25,000
-
 ---
 
-# 🔄 Project Methodology
+# 🔄 Project Workflow
 
 ## 1️⃣ Data Collection
 
-- Imported IMDB Dataset
+- Imported IMDB dataset
 - Loaded data using Pandas
 
 ---
@@ -92,14 +101,14 @@ The original sentiment labels were converted into mental health categories:
 
 The preprocessing stage included:
 - Lowercasing
-- Removal of URLs
+- URL removal
 - Tokenization
 - Stopword removal
 - Text cleaning
 
 Libraries used:
 - NLTK
-- Regular Expressions (re)
+- Regular Expressions (`re`)
 
 ---
 
@@ -107,8 +116,8 @@ Libraries used:
 
 EDA techniques performed:
 - Label distribution analysis
-- Word frequency analysis
-- Data balance visualization
+- Dataset balance checking
+- Visualization of class distribution
 
 Visualization libraries:
 - Matplotlib
@@ -120,23 +129,43 @@ Visualization libraries:
 
 Text data was converted into numerical vectors using:
 
-### TF-IDF Vectorization
+## TF-IDF Vectorization
 
-TF-IDF helps identify important words while reducing the impact of commonly occurring words.
+TF-IDF helps identify important words while reducing the impact of frequently occurring words.
 
----
-
-## 5️⃣ Model Building
-
-The following machine learning models were trained:
-
-### ✅ Support Vector Machine (SVM)
-
-### ✅ Logistic Regression
+```python id="yoqmqv"
+TfidfVectorizer(max_features=5000)
+```
 
 ---
 
-## 6️⃣ Model Evaluation
+# 🤖 Machine Learning Models
+
+The following machine learning models were trained and evaluated:
+
+## ✅ Support Vector Machine (SVM)
+
+```python id="6n4siy"
+LinearSVC()
+```
+
+### Accuracy Achieved
+- 88%
+
+---
+
+## ✅ Logistic Regression
+
+```python id="mnkq2q"
+LogisticRegression()
+```
+
+### Accuracy Achieved
+- 89%
+
+---
+
+# 📊 Model Evaluation
 
 Evaluation metrics used:
 - Accuracy
@@ -147,16 +176,27 @@ Evaluation metrics used:
 
 ---
 
-# 📊 Results Summary
+# 📈 Results Summary
 
 | Model | Accuracy |
 |---|---|
 | SVM | 88% |
 | Logistic Regression | 89% |
 
-## Best Performing Model
+## 🏆 Best Performing Model
 
-- Logistic Regression achieved the highest accuracy of **89%**.
+- Logistic Regression achieved the best performance with **89% accuracy**.
+
+---
+
+# 📉 Confusion Matrix Interpretation
+
+The confusion matrix shows that the majority of predictions were classified correctly with relatively few misclassifications.
+
+The model demonstrated:
+- Balanced precision and recall
+- Good classification capability
+- Reliable performance on unseen test data
 
 ---
 
@@ -170,31 +210,22 @@ Evaluation metrics used:
 - Scikit-learn
 - Matplotlib
 - Seaborn
-- Streamlit
+- Pickle
 - GitHub
 
 ---
 
-# 📁 Project Structure
 
-```bash
-Predictive_Project_2/
-│
-├── models/
-│   ├── mental_health_model.pkl
-│   └── tfidf_vectorizer.pkl
-│
-├── results/
-│   └── confusion_matrix.png
-│
-├── src/
-│   ├── preprocessing_eda.ipynb
-│   ├── model_training.ipynb
-│   └── evaluation_deployment.ipynb
-│
-├── dataset/
-│   └── IMDB Dataset.csv
-│
-├── Mental_Health_Classification.ipynb
-├── requirements.txt
-└── README.md
+# 📌 Conclusion
+
+This project successfully demonstrates the use of NLP and machine learning techniques for mental health-related text classification.
+
+The system preprocesses textual data, extracts meaningful features using TF-IDF, trains machine learning models, evaluates performance, and saves trained models for future deployment.
+
+The project highlights the practical application of artificial intelligence in text analytics and sentiment-based mental health analysis.
+
+---
+
+ 
+
+---
