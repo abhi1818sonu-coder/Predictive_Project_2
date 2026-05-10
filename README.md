@@ -1,2 +1,1 @@
-# Predictive_Project_2
-Mental health status classification from social media text.
+# Mental Health Status Classification from Social Media Text
