@@ -49,3 +49,6 @@ Predictive_Project_2/
 ├── EDA.ipynb
 ├── requirements.txt
 └── README.md
+## 📌 Conclusion
+
+This project successfully demonstrates the use of NLP and machine learning techniques for mental health status classification from textual data.
