@@ -1,20 +1,20 @@
-# 🧠 Mental Health Status Classification from Social Media Text
+# Mental Health Status Classification from Social Media Text
 
-## 👥 Team Members
+## Team Members
 
 - Abhi P Vijay
 - Nakshathra V
 
 ---
 
-# 🎓 Course Details
+# Course Details
 
 - Course: Predictive Analytics
 
 
 ---
 
-# 📌 Project Overview
+# Project Overview
 
 This project focuses on detecting and classifying mental health status from textual social media/movie review data using Natural Language Processing (NLP) and Machine Learning techniques.
 
@@ -33,7 +33,7 @@ The project demonstrates the complete machine learning pipeline including:
 
 ---
 
-# 🎯 Objectives
+#  Objectives
 
 - To preprocess and clean textual data
 - To perform exploratory data analysis on text data
@@ -44,7 +44,7 @@ The project demonstrates the complete machine learning pipeline including:
 
 ---
 
-# 💡 Problem Statement
+#  Problem Statement
 
 Mental health-related emotions and sentiments are increasingly reflected in online text data. Manual analysis of such large-scale textual content is difficult and time-consuming.
 
@@ -52,7 +52,7 @@ This project aims to develop an NLP-based machine learning system capable of aut
 
 ---
 
-# 📂 Dataset Description
+#  Dataset Description
 
 ## Dataset Used
 
@@ -88,16 +88,16 @@ The original sentiment labels were mapped into mental health categories:
 
 ---
 
-# 🔄 Project Workflow
+#  Project Workflow
 
-## 1️⃣ Data Collection
+##  Data Collection
 
 - Imported IMDB dataset
 - Loaded data using Pandas
 
 ---
 
-## 2️⃣ Data Preprocessing
+##  Data Preprocessing
 
 The preprocessing stage included:
 - Lowercasing
@@ -112,7 +112,7 @@ Libraries used:
 
 ---
 
-## 3️⃣ Exploratory Data Analysis (EDA)
+##  Exploratory Data Analysis (EDA)
 
 EDA techniques performed:
 - Label distribution analysis
@@ -125,7 +125,7 @@ Visualization libraries:
 
 ---
 
-## 4️⃣ Feature Extraction
+##  Feature Extraction
 
 Text data was converted into numerical vectors using:
 
@@ -139,11 +139,11 @@ TfidfVectorizer(max_features=5000)
 
 ---
 
-# 🤖 Machine Learning Models
+#  Machine Learning Models
 
 The following machine learning models were trained and evaluated:
 
-## ✅ Support Vector Machine (SVM)
+##  Support Vector Machine (SVM)
 
 ```python id="6n4siy"
 LinearSVC()
@@ -154,7 +154,7 @@ LinearSVC()
 
 ---
 
-## ✅ Logistic Regression
+##  Logistic Regression
 
 ```python id="mnkq2q"
 LogisticRegression()
@@ -165,7 +165,7 @@ LogisticRegression()
 
 ---
 
-# 📊 Model Evaluation
+#  Model Evaluation
 
 Evaluation metrics used:
 - Accuracy
@@ -176,7 +176,7 @@ Evaluation metrics used:
 
 ---
 
-# 📈 Results Summary
+#  Results Summary
 
 | Model | Accuracy |
 |---|---|
@@ -189,7 +189,7 @@ Evaluation metrics used:
 
 ---
 
-# 📉 Confusion Matrix Interpretation
+#  Confusion Matrix Interpretation
 
 The confusion matrix shows that the majority of predictions were classified correctly with relatively few misclassifications.
 
@@ -200,7 +200,7 @@ The model demonstrated:
 
 ---
 
-# 🛠️ Technologies Used
+#  Technologies Used
 
 - Python
 - Google Colab
@@ -216,7 +216,7 @@ The model demonstrated:
 ---
 
 
-# 📌 Conclusion
+#  Conclusion
 
 This project successfully demonstrates the use of NLP and machine learning techniques for mental health-related text classification.
 
