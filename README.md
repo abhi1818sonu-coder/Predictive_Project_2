@@ -199,6 +199,12 @@ The model demonstrated:
 - Reliable performance on unseen test data
 
 ---
+## Deployment
+## Live Demo
+
+Streamlit App:
+https://mental-health-predictor-predictive-project-2.streamlit.app/
+
 
 #  Technologies Used
 
